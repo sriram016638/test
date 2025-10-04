@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         // Docker Hub Configuration (no changes here)
-        DOCKER_REGISTRY_USER = 'your-dockerhub-username'
+        DOCKER_REGISTRY_USER = 'sriram016638'
         DOCKER_REGISTRY_CREDENTIAL_ID = 'dockerhub-credentials'
         DOCKER_IMAGE_NAME = "${DOCKER_REGISTRY_USER}/simple-node-app"
 
@@ -22,7 +22,7 @@ pipeline {
         stage('Checkout SCM') {
             steps {
                 echo 'Checking out code from Git...'
-                git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
+                git branch: 'main', url: 'https://github.com/sriram016638/test.git'
             }
         }
 
